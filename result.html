@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cd670f2d8e.js"></script>
+    <title>Robinson Matus</title>
+
+</head>
+
+<body>
+    <nav class="navbar ">
+        <p class="navbar-brand text-white">
+            CompanyLogo
+        </p>
+
+        <form class="form-inline">
+            <i class="fas fa-search mr-2"></i>
+            <i class="fas fa-user"></i>
+        </form>
+    </nav>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center  title-body">Result</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-body text-center">Look at the result below to see the details of the person you’re
+                    searched for.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-10">
+                                <h1 class="text-name" id="name">John Smith, 35</h1>
+                                <p class="desc-name" id="notes">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-5">
+                                <h1 class="text-small">Address</h1>
+                                <p class="desc-small" id="address">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <h1 class="text-small">Phone Numbers</h1>
+                                <p class="desc-small" id="phoneNumbers">(555) 555-5555</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-5">
+                                <h1 class="text-small">Email</h1>
+                                <p class="desc-small" id="emailUsuario">loremipsum@dolorsit.com</p>
+                            </div>
+                            <div class="col-md-5">
+                                <h1 class="text-small">Relatives</h1>
+                                <p class="desc-small" id="relatives">Jane Smith</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <section class="banner">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-search">Can’t Find The Right Person?</h2>
+
+                </div>
+            </div>
+
+            <div class="row pp">
+                <div class="col-md-12">
+                    <p class="text-white">
+                        <a class="text-warning">Try Again</a> - Try Again - Make a new search
+                    </p>
+                </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="myForm">
+                        <div class="row  mb-5">
+                            <div class="col-md-10">
+                                <div class="form-group">
+
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="Email">
+                                    <small id="emailHelp" class="text-warning"><i class="fas fa-lock mr-2"></i> Enter
+                                        Any Email Address. They won't be
+                                        notified</small>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                                <button class="btn btn-warning btn-block button">Go!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="mini-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="copyright-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 footer-info">
+                        Terms | Privacy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var email = getUrlParameter('email');
+            ajax_get_json(email);
+        });
+    </script>
+
+</body>
+
+</html>
