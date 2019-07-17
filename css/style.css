@@ -91,6 +91,7 @@ text-align: center;
     color: #999999;
     letter-spacing: 0;
     line-height: 20px;
+    text-align: center;
 }
 
 .mini-footer p {
@@ -235,6 +236,16 @@ letter-spacing: 0;
             font-size: 30px;
             color: #F6BC25;
             letter-spacing: 0;
+    }
+
+    .mini-footer {
+        background: #FFFFFF;
+        font-family: HelveticaNeue;
+        font-size: 15px;
+        color: #999999;
+        letter-spacing: 0;
+        line-height: 20px;
+        text-align: unset;
     }
     
 }
