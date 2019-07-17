@@ -28,7 +28,7 @@ function ajax_get_json(usuarioIngresado) {
 // Buscamos si el correo existe en el JSON
 function encontrarEmail(objectoJSON, usuario) {
 
-    for (i = 0; i < objectoJSON['data'].length - 1; i++) {
+    for (i = 0; i < objectoJSON['data'].length; i++) {
 
         if (objectoJSON['data'][i]['email'] == usuario) {
 
